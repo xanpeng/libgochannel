@@ -4,6 +4,8 @@
 
 #include "gtest/gtest.h"
 
+#include <iostream>
+
 // N is the number of philosophers, traditionally five
 
 // For comparison, here's the equivalent machine-readable
@@ -70,6 +72,8 @@ TEST(ChannelTest, DiningPhilosophersDeadlockFree) {
   std::thread phils[N];
 
   for (size_t i = 0; i < N; i++) {
+    std::cout << "dining i: " << i << std::endl;
+
     forks[i] = std::thread(phil_fork<N>, i, std::ref(t));
 
     // asymmetric philosophers solution to prevent deadlock
