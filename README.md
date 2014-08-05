@@ -1,6 +1,8 @@
 libgochannel
 ============
 
+*under development.*
+
 # About
 
 Code is based on https://github.com/ahorn/cpp-channel.
