@@ -1,4 +1,4 @@
-#include "../channel.h"
+#include "../include/channel.h"
 #include <sstream>
 #include <thread>
 #include <vector>
